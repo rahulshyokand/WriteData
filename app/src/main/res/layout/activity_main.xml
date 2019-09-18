@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".index">
+
+    <TextView
+        android:id="@+id/topname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="40dp"
+        android:text="WriteData"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"
+        app:fontFamily="" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topname"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Data"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="" />
+
+    <EditText
+        android:id="@+id/getData"
+        android:layout_width="281dp"
+        android:layout_height="202dp"
+        android:layout_below="@id/topname"
+        android:layout_alignStart="@+id/topname"
+        android:layout_marginStart="-51dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_design"
+        android:ems="10"
+        android:hint="Write Something here"
+        android:importantForAutofill="yes"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/getFileName"
+        android:layout_width="251dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/topname"
+        android:layout_alignStart="@+id/topname"
+        android:layout_marginStart="-37dp"
+        android:layout_marginTop="239dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_design"
+        android:ems="10"
+        android:hint="Name of File"
+        android:importantForAutofill="yes"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="-259dp"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/buttondesign"
+        android:text="Write"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        app:fontFamily="" />
+
+
+</RelativeLayout>
